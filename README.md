@@ -1,2 +1,10 @@
 # Curso-Pr-ctico
-Mis primeros repositorios con mas sentido en la plataforma jaja
+
+...
+
+## Proyecto #1: figuras geométricas
+
+- Primer paso: definir las fórmulas
+- Segundo paso: implementar fórmulas en Javascript
+- Tercer paso: crear funciones
+- Cuarto paso: integrar Javascript con HTML
