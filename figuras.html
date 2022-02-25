@@ -5,9 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fíguras Geométricas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Figuras Geométricas</h1>
+    <header class="cabecera">
+      <h1 class="cabecera_h1">Hola, soy MathBot</h1>
+      <p>Y puedo ayudarte con algunos cálculos</p>
+    </header>
+    <section class="seccion1">
+      <h2 class="seccion1_h2">Puedo calcular el área y el perímetro de un cuadrado</h2>
+
+      <form>
+        <label for="inputCuadrado">
+          Dime cuánto mide cada lado de tú cuadrado
+        </label>
+        <input id="inputCuadrado" type="number" placeholder="Valor de los Lados"/>
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          calcular área
+        </button>
+      </form>
+
+      <form>
+        <label for="inputLado1">
+          Dime cuánto miden los lados y la base de tu triángulo
+        </label>
+        <input id="inputLado1" type="number" placeholder="Valor del Lado 1"/>
+        <input id="inputLado2" type="number" placeholder="Valor del Lado 2"/>
+        <input id="inputBase" type="number" placeholder="Valor de la Base"/>
+        <input id="inputAltura" type="number" placeholder="Valor de la Altura"/>
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+          Calcular perímetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+          calcular área
+        </button>
+      </form>
+
+      <form >
+      <label for="inputRadio">
+          Dime cuánto mide el radio de tu circulo
+        </label>
+        <input id="inputRadio" type="number" placeholder="Valor del Radio"/>
+        <button type="button" onclick="calculardiametroCirculo()">
+          ¿calcular el diametro?
+        </button>
+        <button type="button" onclick="calcularCircunferenciaCirculo()">
+          ¿calcular la circunferencia?
+                  <button type="button" onclick="calcularAreaCirculo()">
+          ¿calcular el área?
+        </button>
+        </form>
+    </section>
     <script src="./figuras.js"></script>
   </body>
 </html>
