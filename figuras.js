@@ -48,6 +48,18 @@ function areaTriangulo(base, altura) {
 
 console.groupEnd();
 
+//CÓDIGO TRIÁNGULO
+console.group("triangulo isosceles");
+
+function alturaTriangulo(lado1, lado2, base) {
+  if (lado1 === lado2 && lado1 != base) {
+    return Math.sqrt(lado1 * lado2 - (base * base) / 4);
+    console.log("La altura del triángulo es: " + alturaTriangulo + "cm");
+  } else alert("lo siento, pero ese no es un triángulo isosceles");
+}
+
+console.groupEnd();
+
 //CÓDIGO CIRCULO
 console.group("Circulo");
 

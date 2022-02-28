@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fíguras Geométricas</title>
+    <link rel="stylesheet" href="./figuras.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,58 +13,100 @@
       rel="stylesheet"
     />
   </head>
+  
   <body>
     <header class="cabecera">
       <h1 class="cabecera_h1">Hola, soy MathBot</h1>
-      <p>Y puedo ayudarte con algunos cálculos</p>
+      <p class="cabecera_parrafo">Y puedo ayudarte con algunos cálculos</p>
     </header>
-    <section class="seccion1">
-      <h2 class="seccion1_h2">Puedo calcular el área y el perímetro de un cuadrado</h2>
 
+    <section class="seccionCuadrado">
+      <h2 class="seccionCuadrado_h2">Puedo calcular el área y el perímetro de un Cuadrado</h2>
       <form>
-        <label for="inputCuadrado">
+        <label class="seccionCuadrado_label" for="inputCuadrado">
           Dime cuánto mide cada lado de tú cuadrado
         </label>
         <input id="inputCuadrado" type="number" placeholder="Valor de los Lados"/>
+        <span class="inputSpan"></span>
         <button type="button" onclick="calcularPerimetroCuadrado()">
           calcular perímetro
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
         </button>
         <button type="button" onclick="calcularAreaCuadrado()">
           calcular área
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
         </button>
       </form>
+      </section>
 
-      <form>
+      <section class="seccionTriangulo">
+        <h2 class="seccionTriangulo_h2">También puedo calcular el área y el perímetro de un Triángulo</h2>
+        <form>
         <label for="inputLado1">
           Dime cuánto miden los lados y la base de tu triángulo
         </label>
         <input id="inputLado1" type="number" placeholder="Valor del Lado 1"/>
+        <span class="inputSpan"></span>
         <input id="inputLado2" type="number" placeholder="Valor del Lado 2"/>
+        <span class="inputSpan"></span>
         <input id="inputBase" type="number" placeholder="Valor de la Base"/>
+        <span class="inputSpan"></span>
         <input id="inputAltura" type="number" placeholder="Valor de la Altura"/>
+        <span class="inputSpan"></span>
         <button type="button" onclick="calcularPerimetroTriangulo()">
           Calcular perímetro
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
         </button>
         <button type="button" onclick="calcularAreaTriangulo()">
           calcular área
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
         </button>
       </form>
+      </section>
 
-      <form >
-      <label for="inputRadio">
+      <section class="seccionCirculo">
+        <h2 class="seccionCirculo_h2">Y por su puesto que puedo calcular el diametro, circunferencia y área y de un Circulo</h2>
+        <form >
+        <label for="inputRadio">
           Dime cuánto mide el radio de tu circulo
         </label>
         <input id="inputRadio" type="number" placeholder="Valor del Radio"/>
+        <span class="inputSpan"></span>
         <button type="button" onclick="calculardiametroCirculo()">
           ¿calcular el diametro?
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
         </button>
         <button type="button" onclick="calcularCircunferenciaCirculo()">
           ¿calcular la circunferencia?
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
                   <button type="button" onclick="calcularAreaCirculo()">
           ¿calcular el área?
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
         </button>
         </form>
-    </section>
+        </section>
+
     <script src="./figuras.js"></script>
   </body>
 </html>
