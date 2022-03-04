@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porcentajes y Descuentos</title>
+  </head>
+  <body>
+    <header>
+      <h1>DESCUENTOS RAGOTTI</h1>
+      <p>¿estás listo para conocer todos nuestros descuentos?</p>
+    </header>
+
+    <section>
+      <h2>CALCULA EL PRECIO A PAGAR DE TUS PRODUCTOS CON DESCUENTO</h2>
+
+      <form action="">
+        <label for="inputPrecio">
+          Escribe el precio del producto que quieras
+        </label>
+        <input type="number" name="" id="inputPrecio" />
+
+        <label for="inputDescuento">
+          Escribe el descuento del producto que quieras
+        </label>
+        <input type="number" id="inputDescuento" />
+
+        <label for="inputCupon">
+          Si tienes un cupon, escribelo justo aquí para recibir un descuento
+          adicional
+        </label>
+        <input type="tex" id="inputCupon" />
+
+        <button type="button" onclick="precioDeOferta()">
+          Calcular el precio con descuento
+        </button>
+
+        <p id="resultado"></p>
+      </form>
+    </section>
+
+    <script src="descuentos.js"></script>
+  </body>
+</html>
